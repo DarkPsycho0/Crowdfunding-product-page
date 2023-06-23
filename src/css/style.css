@@ -40,6 +40,10 @@ body{
     font-weight: 500;
 }
 
+.menu li:hover{
+    text-decoration: underline;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -90,6 +94,12 @@ body{
     color: hsl(0, 0%, 95%);
     font-size: 17px;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card.product button:hover{
+    background-color: hsl(176, 72%, 28%);
 }
 
 .card.product ul{
@@ -99,6 +109,12 @@ body{
     background-color: hsl(0, 0%, 95%);
     border-radius: 40px;
     width: 175px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card.product ul:hover{
+    opacity: 80%;
 }
 
 .card.product ul li p{
@@ -215,6 +231,12 @@ body{
     color: hsl(0, 0%, 95%);
     font-size: 17px;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card.about button:hover{
+    background-color: hsl(176, 72%, 28%);
 }
 
 .version.out-of-stock{
@@ -222,5 +244,9 @@ body{
 }
 
 .version.out-of-stock button{
+    background-color: hsl(0, 0%, 48%);
+}
+
+.version.out-of-stock button:hover{
     background-color: hsl(0, 0%, 48%);
 }
